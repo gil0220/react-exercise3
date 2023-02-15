@@ -196,7 +196,10 @@ export default class App extends Component {
             <Routes>
               <Route
                 path="/"
-                element={<div className="m-5 ">Welcome to my shop!</div>}
+                element={<><h3 className="m-5 " style={{ textAlign: 'center', fontStyle: 'italic'  }}>Smell O'Shoppe</h3><div><Counters
+                  counters={this.state.counters}
+                  addToCart={this.addToCart} 
+                  /></div></>}
               />
               <Route
                 path="/product"
